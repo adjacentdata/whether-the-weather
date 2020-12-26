@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lobster', cursive, 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url(./imgs/rain-3443977_1920.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+input{
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding: 15px 10px;
+    max-width: 280px;
+    border-bottom: 2px solid white;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 5px;
+    font: 'Open Sans', 'sans-serif';
+}
+
+.searchbox:focus{
+    background-color: cyan;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 100%;
+    flex-direction: column;
+    padding: 25px 25px 50px;
+
+}
+
+/*City*/
+
+.city-name{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    text-shadow: 2px 2px black;
+}
+
+.info .temperature{
+    color: white;
+    font-family: 'Open Sans', 'sans serif';
+    font-size: 80px;
+    font-weight: 600;
+    margin: 20px;
+    text-shadow: 2px 2px black;
+}
+
+.info .precip{
+    color: white;
+    font-family: 'Open Sans', 'sans serif';
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px black;
+    margin-top: 25px;
+}
+
+.info .low-high{
+    color: white;
+    font-family: 'Open Sans', 'sans serif' ;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 2px 2px black;
+}
