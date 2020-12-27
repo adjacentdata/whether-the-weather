@@ -14,4 +14,14 @@ function searchResults(searchedCity){
     }).then(finalResults);
 }
 
+function finalResults(weatherData){;
+    var searchedCity = document.querySelector('.city');
+    searchedCity.innerText = `${weatherData.name}, ${weatherData.sys.country}`
+    let temperature = document.querySelector('.temperature');
+    temperature.innerHTML = `<h3>${Math.ceil(weatherData.main.temp)}<span>°C </span></h3>`
+    let weatherMain = document.querySelector('.precip');
+    weatherMain.innerText = `${weatherData.description}`
+}
+
+
 
