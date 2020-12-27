@@ -11,7 +11,7 @@ function searchResults(searchedCity){
     fetch(`http://api.openweathermap.org/data/2.5/weather?id=${searchedCity}&appid={"Your API Key here"}`)
     .then(weatherData => {
         return weatherData.json()
-    }).then(finalResults);
+    }).then(finalResults(weatherData));
 }
 
 function finalResults(weatherData){;
