@@ -4,10 +4,6 @@ function searchfinder(event){
     }
 }
 
-function result(returnedCity){
-    fetch(`${weatherAPI.baseurl}`)
-}
-
 const search = document.querySelector('input');
 search.addEventListener('keypress', searchfinder);
 
