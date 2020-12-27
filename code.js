@@ -20,8 +20,9 @@ function finalResults(weatherData){;
     let temperature = document.querySelector('.temperature');
     temperature.innerHTML = `<h3>${Math.ceil(weatherData.main.temp)}<span>°C </span></h3>`
     let weatherMain = document.querySelector('.precip');
-    weatherMain.innerText = `${weatherData.description}`
+    weatherMain.innerText = `${weatherData.weather[0].description}`
+    let lowestHighestToday = document.querySelector('low-high');
+    lowestHighestToday.innerText = `${weatherData.main.temp_min}°C / ${weatherData.main.temp_max}`
 }
-
 
 
