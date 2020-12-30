@@ -1,6 +1,6 @@
 function searchfinder(event){
     if(event.keyCode == 13){
-        console.log(search.value)
+        searchResults(search.value);
     }
 }
 
